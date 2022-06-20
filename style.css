@@ -1,0 +1,295 @@
+body{
+    background-color: rgba(209, 245, 245, 0.966);
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 90px;
+    margin: auto;
+    background-color: lightgray;
+}
+.logo{
+    float: left;
+    padding: 5px;
+}    
+.logo img{
+    border: 1px groove purple;
+    border-radius: 50%;
+}
+.navbar ul li {
+    display: inline-block;
+    margin-top: 5px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.navbar li a{
+    padding-right: 20px;
+}
+.navbar{
+    float: right;
+    padding: 5px;
+}
+.navbar ul li a:hover {
+    color: orangered;
+}
+.masthead{
+    width: 100%;
+    height: 300px;
+    background-color: beige;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/03/08/36/84/1000_F_308368417_Q65YcPHlGlnuMaoJupFH3R7Ym2D449mK.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
+}
+.name{
+    font-size: 3rem;
+    font-family: 'Gill Sans';
+    color: rgb(112, 13, 13);
+}
+.name:hover {
+    color: rgb(38, 226, 211);
+    text-shadow: 3px 3px 3px black;
+}
+.b1{
+    width: 8%;
+    padding: 10px;
+    margin-top: 50px;
+    border: 2px solid blue;
+    border-radius: 30px;
+    background-color: lightgoldenrodyellow;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.b1:hover, .b:hover {
+    color: orange;
+    border: 1.5px solid lawngreen;
+    background-color: black;
+}
+.cards{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: darksalmon;
+    border: 2px solid red;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 700;
+    font-weight: bold;
+    padding: 10px;
+}
+.btn{
+    width: 50%;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+    left: 40%;
+}
+.b{
+    font-size: 1.5rem;
+    color: darkblue;
+    border: 3px solid purple;
+    border-radius: 20px;
+    background-color: rgb(250, 143, 191);
+    padding: 10px;
+    margin-right: 40px;
+}
+.flex{
+    width: 100%;
+    height: 350px;
+    background-color: rgba(143, 238, 143, 0.733);
+    background-image: linear-gradient( darkcyan, peru);
+    border: 1px solid #000;
+    border-radius: 60%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(252, 247, 0, 0.938);
+    opacity: 0.5;
+    border: 2px solid rgb(170, 5, 170);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 60px;
+}
+.transition{
+    width: 100%;
+    height: 100px;
+}
+.t{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    background: gray;
+    float: left;
+    transition: width 2s;
+}
+.t:hover {
+    width: 300px;
+}
+.t2{
+    width: 100px;
+    height: 100px;
+    background: gray;
+    float: right;
+    transition: width 2s;
+}
+.rotate{
+    width: 100%;
+    height: 200px;
+    background-image: radial-gradient(rgba(73, 11, 16, 0.795), peachpuff, rgba(61, 35, 156, 0.973));
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-evenly;
+    
+}
+.r{
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(157, 255, 0);
+    background-color: darkblue;
+    animation: r 2.5s linear infinite;
+}
+@keyframes r{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    background-color: #d16939;
+    padding: 20px;
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2spx solid black;
+    border-radius: 20PX;
+    text-align: center;
+    font-size: 30px;
+}
+/* media query */
+@media screen and (max-width: 500px){
+    header{
+        height: 100px;
+        margin-bottom: auto;
+    }
+    .navbar ul li {
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .navbar li a{
+        padding-right: 10px;
+    }
+    .navbar{
+        float: right;
+        padding: 0;
+    }
+    .b1{
+        width: 18%;
+    }
+    .name{
+        font-size: 2.2rem;
+        color: rgb(94, 8, 8);
+    }
+    .cards{
+        width: 90%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 26px;
+    }
+    .box{
+        width: 400px;
+        height: 80px;
+        background-color: darksalmon;
+        border: 1px solid red;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgb(70, 12, 70);
+        font-weight: bold;
+        margin-top: 25px; 
+        padding-top: 30px;
+    }
+    .btn{
+        width: 40%;
+        height: 70px;
+        display: inline-block;
+        position: relative;
+        left: 40%;
+        top: 80px;
+    }
+    .b{
+        font-size: 1rem;
+        color: darkblue;
+        border: 3px solid purple;
+        border-radius: 20px;
+        background-color: rgb(58, 56, 160);
+        color: aliceblue;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .flex{
+        width: 100%;
+        height: 400px;
+        background-image:  linear-gradient( darkcyan, peru);
+        border: 1px solid #000;
+        border-radius: 10px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 120px;
+        padding-top: 80px;
+    }
+    .box1{
+        width: 70px;
+        height: 80px;
+        background-color: rgba(235, 235, 0, 0.836);
+        border: 1px solid rgb(170, 5, 170);
+        border-radius: 10px;
+        text-align: center;
+        font-size: small;
+        font-weight: bold;
+        padding-top: 60px;
+    }
+    .grid-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 5px;
+        background-color: #d16939;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 2spx solid black;
+        border-radius: 20PX;
+        text-align: center;
+        font-size: 16px;
+    }
+}
